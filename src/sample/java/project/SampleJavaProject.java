@@ -49,6 +49,7 @@ public class SampleJavaProject implements Runnable {
             }
         } catch (ParameterException e) {
             System.err.println("error: " + e.getMessage());
+            System.err.println("error: " + e.getMessage());
             new JCommander(new SampleJavaProject()).usage();
             System.exit(-1);
         }
@@ -74,4 +75,7 @@ public class SampleJavaProject implements Runnable {
             }
         } while (loop);
     }
+    public void abc()
+    {
+    System.err.println("error: " + e.getMessage());}
 }
